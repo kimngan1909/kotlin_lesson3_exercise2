@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/fb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="116dp"
+        android:layout_marginStart="8dp"
+        android:id="@+id/imageView"
+        />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/ig"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        android:layout_marginTop="16dp"
+        android:id="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/tw"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        android:layout_marginTop="16dp"
+        android:id="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/gh" />
+
+
+    <SeekBar
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="@+id/fbTextView"
+        android:id="@+id/fbSeekbar"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/fbTextView"
+        />
+
+    <SeekBar
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="@+id/igTextView"
+        android:id="@+id/igSeekbar"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/igTextView"
+        />
+
+    <SeekBar
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="@+id/twTextView"
+        android:id="@+id/twSeekbar"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/twTextView"
+        />
+    <SeekBar
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="@+id/ghTextView"
+        android:id="@+id/ghSeekbar"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/ghTextView"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        android:layout_marginTop="15dp"
+        android:id="@+id/fbTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#FF5722"
+        android:text="0%"
+        android:layout_marginEnd="8dp"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        android:layout_marginTop="15dp"
+        android:id="@+id/igTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#FF5722"
+        android:text="0%"
+        android:layout_marginEnd="8dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        android:layout_marginTop="15dp"
+        android:id="@+id/twTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#FF5722"
+        android:text="0%"
+        android:layout_marginEnd="8dp"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        android:layout_marginTop="15dp"
+        android:id="@+id/ghTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#FF5722"
+        android:text="0%"
+        android:layout_marginEnd="8dp"
+        />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/full"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:id="@+id/fullBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/clear"
+        android:id="@+id/clearBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        />
+
+    <Button
+        android:id="@+id/popupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:text="Show popup menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="345dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Survey your satisfaction level about applications"
+        android:textAlignment="center"
+        android:textColor="#CDDC39"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
